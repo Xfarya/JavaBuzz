@@ -4,7 +4,7 @@ public class JavaBuzz {
 
     public static String output;
     public static String returnString(int number) {
-        if (number < 0) {
+        if (number < 1) {
             return output = "Invalid Input";
         }
         if (isDivisibleBy(number, 15)) {
