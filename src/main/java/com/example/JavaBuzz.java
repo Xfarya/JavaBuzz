@@ -9,6 +9,8 @@ public class JavaBuzz {
     public static String returnString(int isConvertible) {
         if (isJavaBuzz(isConvertible)) {
            output = "JavaBuzz";
+        } else if (isJava(isConvertible)) {
+           output = "Java";
         }
         return output;
     }

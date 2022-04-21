@@ -23,7 +23,7 @@ class JavaBuzzTest {
 
     @Test
     public void notJava() {
-        assertTrue(JavaBuzz.isJava(4));
+        assertFalse(JavaBuzz.isJava(4));
     }
 
     @Test
@@ -33,12 +33,17 @@ class JavaBuzzTest {
 
     @Test
     public void notBuzz() {
-        assertTrue(JavaBuzz.isBuzz(6));
+        assertFalse(JavaBuzz.isBuzz(6));
     }
 
     @Test
-    public void returnString() {
+    public void returnStringJavaBuzz() {
        assertEquals("JavaBuzz", JavaBuzz.returnString(15));
+    }
+
+    @Test
+    public void returnStringJava() {
+        assertEquals("Java", JavaBuzz.returnString(3));
     }
 
 
