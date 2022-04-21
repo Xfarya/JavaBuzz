@@ -8,4 +8,8 @@ public class JavaBuzz {
     public static boolean isJavaBuzz(int number) {
         return number % 15 == 0;
     }
+
+    public static boolean isJava(int number) {
+        return number % 5 == 0;
+    }
 }
