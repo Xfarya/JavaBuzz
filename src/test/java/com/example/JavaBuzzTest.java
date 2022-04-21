@@ -6,7 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class JavaBuzzTest {
 
-    @Test
-    void main() {
+   @Test
+   public void JavaBuzz() {
+        assertTrue(JavaBuzz.isJavaBuzz(15));
     }
 }
