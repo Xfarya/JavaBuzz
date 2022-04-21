@@ -1,19 +1,31 @@
 package com.example;
 
 public class JavaBuzz {
+
+    public static String output;
     public static void main(String[] args) {
-        System.out.println("Hello World");
+    }
+
+    public static String returnString(int isConvertible) {
+        if (isJavaBuzz(isConvertible)) {
+           output = "JavaBuzz";
+        }
+        return output;
     }
 
     public static boolean isJavaBuzz(int number) {
-        return number % 15 == 0;
+        return isDivisibleBy(number, 15);
     }
 
     public static boolean isJava(int number) {
-        return number % 3 == 0;
+        return isDivisibleBy(number, 3);
     }
 
     public static boolean isBuzz(int number) {
-        return number % 5 == 0;
+        return isDivisibleBy(number, 5);
+    }
+    {}
+    public static boolean isDivisibleBy(int number, int divisor) {
+        return number % divisor == 0;
     }
 }

@@ -36,4 +36,10 @@ class JavaBuzzTest {
         assertTrue(JavaBuzz.isBuzz(6));
     }
 
+    @Test
+    public void returnString() {
+       assertEquals("JavaBuzz", JavaBuzz.returnString(15));
+    }
+
+
 }
