@@ -3,9 +3,6 @@ package com.example;
 public class JavaBuzz {
 
     public static String output;
-    public static void main(String[] args) {
-    }
-
     public static String returnString(int number) {
         if (number < 0) {
             return output = "Invalid Input";
