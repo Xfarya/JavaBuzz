@@ -10,6 +10,10 @@ public class JavaBuzz {
     }
 
     public static boolean isJava(int number) {
+        return number % 3 == 0;
+    }
+
+    public static boolean isBuzz(int number) {
         return number % 5 == 0;
     }
 }

@@ -12,7 +12,28 @@ class JavaBuzzTest {
     }
 
     @Test
-    public void java() {
-        assertTrue(JavaBuzz.isJava(5));
+    public void notJavaBuzz() {
+        assertFalse(JavaBuzz.isJavaBuzz(16));
     }
+
+    @Test
+    public void java() {
+        assertTrue(JavaBuzz.isJava(3));
+    }
+
+    @Test
+    public void notJava() {
+        assertTrue(JavaBuzz.isJava(4));
+    }
+
+    @Test
+    public void buzz() {
+        assertTrue(JavaBuzz.isBuzz(5));
+    }
+
+    @Test
+    public void notBuzz() {
+        assertTrue(JavaBuzz.isBuzz(6));
+    }
+
 }
